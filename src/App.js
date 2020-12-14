@@ -1,12 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+
+//* import components
+import Form from './components/Form';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Sharon's TODO</h1>
+      <header>
+        <h1>Sheron's TODO List</h1>
       </header>
+      <Form />
+      <TodoList />
     </div>
   );
 }
