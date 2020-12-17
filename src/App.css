@@ -228,11 +228,12 @@ select {
 
 .trash span {
   position: absolute;
-  height: 12px;
+  height: 7px;
+  width: 40px;
   background: #ffd6d6;
-  top: -19px;
-  left: -10px;
-  right: -10px;
+  top: -11px;
+  left: -5px;
+  right: -8px;
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -244,9 +245,10 @@ select {
 .trash span::after {
   content: '';
   position: absolute;
-  top: -10px;
-  width: 27px;
-  height: 7px;
+  top: -6px;
+  left: 13px;
+  width: 15px;
+  height: 4px;
   background: #ffd6d6;
 
   border-top-right-radius: 10px;
@@ -254,36 +256,35 @@ select {
   transform: rotate(0deg);
   transition: transform 250ms;
   transform-origin: 19% 100%;
-  left: 27px;
 }
 
 .trash i {
   position: relative;
   display: block;
   width: 5px;
-  height: 50px;
-  background: #ffffff;
-  margin: 14px auto;
+  height: 20px;
+  background: #ff0053d1;
+  margin: 7px auto;
   border-radius: 5px;
 }
 
 .trash i::after {
   content: '';
   position: absolute;
-  left: -18px;
+  left: -9px;
   width: 5px;
-  height: 50px;
-  background: #ffffff;
+  height: 20px;
+  background: #ff0053d1;
   border-radius: 5px;
 }
 
 .trash i::before {
   content: '';
   position: absolute;
-  right: -18px;
+  right: -9px;
   width: 5px;
-  height: 50px;
-  background: #ffffff;
+  height: 20px;
+  background: #ff0053d1;
   border-radius: 5px;
 }
 
