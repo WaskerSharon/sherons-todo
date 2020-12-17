@@ -33,7 +33,11 @@ const Todo = ({ setTodos, todos, todo, text }) => {
             </button>
             
             <button onClick={deleteHandler} className='trash-btn'>
-                <i className='fas fa-trash'></i>
+                {/* <i className='fas fa-trash'></i> */}
+                <span className='trash'>
+                    <span></span>
+                    <i></i>
+                </span>
             </button>
             
         </div>
