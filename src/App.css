@@ -196,7 +196,8 @@ select {
 
 .trash-btn {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  padding-top: 21px;
   /* width: 100%; */
   /* height: 100%; */
 }
@@ -205,16 +206,12 @@ select {
   background: #ffd6d6;
   display: inline-block;
   margin: 0 auto;
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
 
   position: relative;
-  -webkit-border-bottom-right-radius: 6px;
-	-webkit-border-bottom-left-radius: 6px;
-	-moz-border-radius-bottomright: 6px;
-	-moz-border-radius-bottomleft: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .trash:after {
@@ -228,11 +225,11 @@ select {
 
 .trash span {
   position: absolute;
-  height: 7px;
-  width: 40px;
+  height: 0.2rem;
+  width: 1.3rem;
   background: #ffd6d6;
-  top: -11px;
-  left: -5px;
+  top: -5.5px;
+  left: -2px;
   right: -8px;
 
   border-top-left-radius: 10px;
@@ -245,10 +242,10 @@ select {
 .trash span::after {
   content: '';
   position: absolute;
-  top: -6px;
-  left: 13px;
-  width: 15px;
-  height: 4px;
+  top: -3.8px;
+  left: 6px;
+  width: .5rem;
+  height: .15rem;
   background: #ffd6d6;
 
   border-top-right-radius: 10px;
@@ -258,40 +255,39 @@ select {
   transform-origin: 19% 100%;
 }
 
+.trash i,
+.trash i::after,
+.trash i::before {
+  width: .1rem;
+  height: .6rem;
+  background: #ff0053d1;
+  border-radius: 5px;
+}
+
 .trash i {
   position: relative;
   display: block;
-  width: 5px;
-  height: 20px;
-  background: #ff0053d1;
-  margin: 7px auto;
-  border-radius: 5px;
+  margin: 3px auto;
 }
 
 .trash i::after {
   content: '';
   position: absolute;
-  left: -9px;
-  width: 5px;
-  height: 20px;
-  background: #ff0053d1;
-  border-radius: 5px;
+  left: -4px;
 }
 
 .trash i::before {
   content: '';
   position: absolute;
-  right: -9px;
-  width: 5px;
-  height: 20px;
-  background: #ff0053d1;
-  border-radius: 5px;
+  right: -4px;
 }
 
 .trash:hover span {
   transform: rotate(-45deg);
   transition: transform 250ms;
 }
+
+/* Checkbox Animation  */ 
 
 
 
