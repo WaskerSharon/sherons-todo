@@ -24,35 +24,46 @@ const Todo = ({ setTodos, todos, todo, text }) => {
     return ( 
 
         <div className='todo'>
-            {/* <li className={`todo-item ${ todo.completed ? 'completed' : '' } `}>
-                {text}
-            </li> */}
 
             {/* <button onClick={completeHandler} className='complete-btn'>
                 <i className='fas fa-check'></i>
-            </button> */}
+            </button> 
 
-            <section onClick={completeHandler} className='todo-checkbox-contain'>
+             <li className={`todo-item ${ todo.completed ? 'completed' : '' } `}>
+                {text}
+            </li> */}
+
+
+            <section className='todo-checkbox-contain'>
+                <input onClick={completeHandler} id={todo.id} className='complete-btn, todo-checkbox' type='checkbox'/>
+
+                <label htmlFor={todo.id} className='todo-checkbox-label'>
+                    <span className='todo-checkbox-span'></span>
+                      <li className={`todo-item ${ todo.completed ? 'completed' : '' } `}>
+                         {text}
+                      </li>
+                </label>
+            </section>
+
+
+            {/* <section onClick={completeHandler} className='todo-checkbox-contain'>
                 <input id='one' className='todo-checkbox' type='checkbox'/>
                 <label htmlFor='one' className='todo-checkbox-label'>
                     <span className='todo-checkbox-span, complete-btn'></span>
                       <li className={`todo-item ${ todo.completed ? 'completed' : '' } `}>
                          {text}
                       </li>
-                    <ins className='todo-checkbox-ins'>
-                        <i className='todo-checkbox-i'>{text}</i>
-                    </ins>
                 </label>
-            </section>
+            </section> */}
 
-            <section>
+            {/* <section>
                 <input id='one' type='checkbox' />
                 <label for='one'>
                     <span></span>
                     Off with your head
                     <ins><i>Off with your head</i></ins>
                 </label>
-            </section>
+            </section> */}
             
             <button onClick={deleteHandler} className='trash-btn'>
                 {/* <i className='fas fa-trash'></i> */}
