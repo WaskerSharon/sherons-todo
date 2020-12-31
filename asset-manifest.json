@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/sherons-todo/static/css/main.60bc03c1.chunk.css",
-    "main.js": "/sherons-todo/static/js/main.9d6af80e.chunk.js",
-    "main.js.map": "/sherons-todo/static/js/main.9d6af80e.chunk.js.map",
-    "runtime-main.js": "/sherons-todo/static/js/runtime-main.c1c8fa3a.js",
-    "runtime-main.js.map": "/sherons-todo/static/js/runtime-main.c1c8fa3a.js.map",
+    "main.css": "/sherons-todo/static/css/main.8256a07e.chunk.css",
+    "main.js": "/sherons-todo/static/js/main.924feba3.chunk.js",
+    "main.js.map": "/sherons-todo/static/js/main.924feba3.chunk.js.map",
+    "runtime-main.js": "/sherons-todo/static/js/runtime-main.6f3969e6.js",
+    "runtime-main.js.map": "/sherons-todo/static/js/runtime-main.6f3969e6.js.map",
     "static/js/2.0fa38956.chunk.js": "/sherons-todo/static/js/2.0fa38956.chunk.js",
     "static/js/2.0fa38956.chunk.js.map": "/sherons-todo/static/js/2.0fa38956.chunk.js.map",
-    "static/js/3.bf9bb6fd.chunk.js": "/sherons-todo/static/js/3.bf9bb6fd.chunk.js",
-    "static/js/3.bf9bb6fd.chunk.js.map": "/sherons-todo/static/js/3.bf9bb6fd.chunk.js.map",
+    "static/js/3.8b52c049.chunk.js": "/sherons-todo/static/js/3.8b52c049.chunk.js",
+    "static/js/3.8b52c049.chunk.js.map": "/sherons-todo/static/js/3.8b52c049.chunk.js.map",
     "index.html": "/sherons-todo/index.html",
-    "static/css/main.60bc03c1.chunk.css.map": "/sherons-todo/static/css/main.60bc03c1.chunk.css.map",
+    "static/css/main.8256a07e.chunk.css.map": "/sherons-todo/static/css/main.8256a07e.chunk.css.map",
     "static/js/2.0fa38956.chunk.js.LICENSE.txt": "/sherons-todo/static/js/2.0fa38956.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c1c8fa3a.js",
+    "static/js/runtime-main.6f3969e6.js",
     "static/js/2.0fa38956.chunk.js",
-    "static/css/main.60bc03c1.chunk.css",
-    "static/js/main.9d6af80e.chunk.js"
+    "static/css/main.8256a07e.chunk.css",
+    "static/js/main.924feba3.chunk.js"
   ]
 }
