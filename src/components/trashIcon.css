@@ -1,0 +1,96 @@
+/*  icon animation */
+
+.trash-btn {
+    display: flex;
+    align-items: baseline;
+    background: #ff0053d1;
+    padding-top: 21px;
+    height: 100%;
+  }
+  
+  .trash {
+    background: #ffd6d6;
+    display: inline-block;
+    margin: 0 auto;
+    width: 1rem;
+    height: 1rem;
+  
+    position: relative;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .trash:after {
+    content: '';
+    position: absolute;
+    left: -99px;
+    right: 0;
+    bottom: -50px;
+    width: 300px;
+  }
+  
+  .trash span {
+    position: absolute;
+    height: 0.2rem;
+    width: 1.3rem;
+    background: #ffd6d6;
+    top: -5.5px;
+    left: -2px;
+    right: -8px;
+  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: rotate(0deg);
+    transition: transform 250ms;
+    transform-origin: 19% 100%; 
+  }
+  
+  .trash span::after {
+    content: '';
+    position: absolute;
+    top: -3.8px;
+    left: 6px;
+    width: .5rem;
+    height: .15rem;
+    background: #ffd6d6;
+  
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transform: rotate(0deg);
+    transition: transform 250ms;
+    transform-origin: 19% 100%;
+  }
+  
+  .trash i,
+  .trash i::after,
+  .trash i::before {
+    width: .1rem;
+    height: .6rem;
+    background: #ff0053d1;
+    border-radius: 5px;
+  }
+  
+  .trash i {
+    position: relative;
+    display: block;
+    margin: 3px auto;
+  }
+  
+  .trash i::after {
+    content: '';
+    position: absolute;
+    left: -4px;
+  }
+  
+  .trash i::before {
+    content: '';
+    position: absolute;
+    right: -4px;
+  }
+  
+  .trash:hover span {
+    transform: rotate(-45deg);
+    transition: transform 250ms;
+  }
+  
+  

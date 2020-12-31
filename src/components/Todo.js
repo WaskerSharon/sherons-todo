@@ -1,5 +1,8 @@
 import React from 'react';
 
+import './checkMarkIcon.css';
+import './trashIcon.css';
+
 const Todo = ({ setTodos, todos, todo, text }) => {
 
     // Events
@@ -38,7 +41,10 @@ const Todo = ({ setTodos, todos, todo, text }) => {
                 <input onClick={completeHandler} id={todo.id} className='complete-btn, todo-checkbox' type='checkbox'/>
 
                 <label htmlFor={todo.id} className='todo-checkbox-label'>
-                    <span className='todo-checkbox-span'></span>
+                    <span className='todo-checkbox-span'>
+                    <div className='check-mark draw'></div>
+
+                    </span>
                       <li className={`todo-item ${ todo.completed ? 'completed' : '' } `}>
                          {text}
                       </li>
