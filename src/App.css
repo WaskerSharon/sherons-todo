@@ -155,11 +155,16 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
+
+  color: #ff0053d1;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  width: 13rem;
 }
 
 /* custom select */
 
-.select {
+.select-contain {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -167,18 +172,12 @@ select {
   margin: 1rem;
   position: relative;
   overflow: hidden;
-}
-
-select {
-  color: #ff0053d1;
-  font-family: 'Poppins', sans-serif;
-  cursor: pointer;
-  width: 13rem;
+  background-color: #ffffff;
 }
 
 /* arrow */
 
-.select::after {
+.select-contain::after {
   content: '\25BC';
   position: absolute;
   top: 0;

@@ -11,6 +11,7 @@
   
   /* input[type='checkbox'] { */
   .todo-checkbox {
+    display: none;
     height: 0;
     width: 0;
   }
@@ -20,7 +21,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    color: #7274d3;
+    color: #00177b;
     transition: color 250ms cubic-bezier(.4, 0, .23, 1);
   }
   
@@ -44,7 +45,7 @@
   input[type='checkbox']:focus + label { */
     .todo-checkbox-label:hover,
     .todo-checkbox:focus + .todo-checkbox-label {
-    color: #113865;
+    color: #002d7b;
     font-weight: 600;
   }
   
@@ -79,6 +80,8 @@
     transform: rotate(45deg);
     transform-origin: 0% 100%;
     animation: checkbox-check 125ms 250ms cubic-bezier(.4, 0, .23, 1) forwards;
+
+    -moz-transform: scale(2);
   }
   
   @keyframes shrink-bounce {
