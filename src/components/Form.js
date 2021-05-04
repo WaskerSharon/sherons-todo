@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
 
-const  Form = ( { setInputText, todos, setTodos, inputText, setStatus } ) => {
+import './plusInput.css';
+
+
+const  Form = ( { setInputText, todos, setTodos, inputText, setStatus, message } ) => {
+
+    const [condition, setCondition] = useState(false);
 
     const inputTexHandler = (e) => {
         setInputText(e.target.value);
@@ -24,8 +30,12 @@ const  Form = ( { setInputText, todos, setTodos, inputText, setStatus } ) => {
         <form>
             <div className='input-container'>
                 <input value={inputText} onChange={inputTexHandler} type="text" className='todo-input' />
-                <button onClick={submitTodoHandler} className='todo-button' type='submit' >
+                <button onClick={submitTodoHandler} id='root' className='todo-button' type='submit' >
                     <i className='fas fa-plus-square'></i>
+
+                    <div onClick={() => setCondition(!condition)}
+                    className={condition ? 'button toggled' : 'button'}>{message}</div>
+
                 </button>
             </div>
             <div className='select-contain'>
@@ -37,6 +47,8 @@ const  Form = ( { setInputText, todos, setTodos, inputText, setStatus } ) => {
             </div>
         </form>
      );
+
+     ReactDOM.render(<Form message="click here" />);
 }
  
 export default  Form;

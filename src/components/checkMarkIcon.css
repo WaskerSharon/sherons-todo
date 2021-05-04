@@ -63,6 +63,7 @@
   }  */
 
   input[type='checkbox']:checked + label > span {
+    display: flex;
     border: .15rem solid #002d7b;
     background-color: #f0ff19;
     animation: shrink-bounce 200ms cubic-bezier(.4, 0, .23, 1);
@@ -71,17 +72,17 @@
   input[type='checkbox']:checked + label > span::before {
     content: '';
     position: absolute;
-    top: .7rem;
-    left: .5rem;
+    top: .85rem;
     border-right: 2px solid transparent;
     border-bottom: 2px solid transparent;
+    align-self: center;
     
     zoom: 2;
     transform: rotate(45deg);
-    transform-origin: 0% 100%;
     animation: checkbox-check 125ms 250ms cubic-bezier(.4, 0, .23, 1) forwards;
 
-    -moz-transform: scale(2);
+    -moz-transform: scale(2) rotate(45deg);
+    -webkit-transform: scale(2) rotate(45deg);
   }
   
   @keyframes shrink-bounce {
