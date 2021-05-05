@@ -23,30 +23,32 @@ function App() {
   // Use Effect
 
   useEffect(() => {
-    const filterHandler = () => {
-      switch (status) {
-        case 'completed':
-          setFilteredTodos(todos.filter(todo => todo.completed === true));
-          break;
-        
-        case 'uncompleted':
-          setFilteredTodos(todos.filter(todo => todo.completed === false ));
-          break;
-
-        default:
-          setFilteredTodos(todos);
-          break;
-      }
-    };
-
     filterHandler();
     saveLocalTodos();
   }, [todos, status] );
 
+  //Functions
+
+  const filterHandler = () => {
+    switch (status) {
+      case 'completed':
+        setFilteredTodos(todos.filter(todo => todo.completed === true));
+        break;
+      
+      case 'uncompleted':
+        setFilteredTodos(todos.filter(todo => todo.completed === false ));
+        break;
+
+      default:
+        setFilteredTodos(todos);
+        break;
+    }
+  };
+
   // Save to Local
 
   const saveLocalTodos = () => {
-    localStorage.setItem('todos', JSON.stringify(todos) );
+      localStorage.setItem('todos', JSON.stringify(todos));
   };
 
   const getLocalTodos = () => {

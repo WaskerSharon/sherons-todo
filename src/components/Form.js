@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import './plusInput.css';
-
-
 const  Form = ( { setInputText, todos, setTodos, inputText, setStatus, message } ) => {
 
     const [condition, setCondition] = useState(false);
